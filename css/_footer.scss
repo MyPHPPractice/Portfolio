@@ -1,0 +1,66 @@
+/*
+*
+*
+*
+*footer
+*
+*
+*
+*/
+footer {
+	clear: left;
+	width: 100%;
+	background-color: $darkblue;
+	//opacity: .5;
+	margin: 0 auto;
+	font-family: $lato;
+
+	address {
+		text-align: center;
+		color: $orange;
+		padding-left: 5%;
+		font-style: normal;
+		font-size: 1.25em;
+	}
+}
+.nav {
+	width: 80%;
+	margin: 0 10%;
+	display: inline-block;
+
+	ul {
+		list-style-type: none;
+		display: -moz-box;
+		display: -webkit-box;
+		display: box;
+		padding: 0;
+
+		@media screen and (max-width:600px) {
+			display: block;
+			width: 100%;
+		}
+		li {
+			box-flex: 1;
+			-moz-box-flex: 1;
+			-webkit-box-flex: 1;
+			text-align: center;
+
+			a {
+				font-size: 1.5em;
+				font-weight: 100;
+				color: $white;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				text-decoration: none;
+
+				&:hover {
+					border-left: 3px solid $orange;
+					border-right: 3px solid $orange;
+					color: $orange;
+					font-weight: 200;
+				}
+			}
+		}
+	}
+}

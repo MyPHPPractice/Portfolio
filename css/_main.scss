@@ -1,0 +1,61 @@
+/*
+*
+*
+*Content area
+*
+*
+*/
+section {
+	width: 80%;
+	height: auto;
+	margin: 0 auto;
+	background-color: $grey;
+	padding: 0 15%;
+	font-family: $jose;
+	overflow: hidden;
+
+	h3 {
+		margin: 25% 0 0 0;
+		padding-left: 7%;
+		text-align: center;
+		font-size: 3em;
+		clear: left;
+		color: $white;
+
+		@media screen and (max-width:800px) {
+			margin-top: 10%;
+		}
+	}
+	article.about {
+		clear: left;
+		font-size: 1em;
+		height: 100%;
+		padding: 5%;
+
+		&::first-letter {
+			font-size: 5em;
+			font-weight: 200;
+			font-family: $jose;
+		}
+		#right {
+			width: 35%;
+			margin: 5%;
+			float: right;
+
+			@media screen and (max-width:800px) {
+				float: none;
+				width: 100%;
+			}
+		}
+		#left {
+			width: 35%;
+			margin: 5%;
+			float: left;
+
+			@media screen and (max-width:800px) {
+				float: none;
+				width: 100%;
+			}
+		}
+	}
+}
