@@ -40,9 +40,15 @@ var stickyNavTop = $('nav').offset().top;
 //   		$( ".scroll" ).animate({ "left": "+=200px" }, "slow" );
 // 	});
  
+<<<<<<< HEAD
 // 	$( "#rw" ).click(function(){
 //   		$( ".scroll" ).animate({ "right": "+=200px" }, "slow" );
 // 	});
+=======
+	$( "#rw" ).click(function(){
+  		$( ".scroll" ).animate({ "right": "+=200px" }, "slow" );
+	});
+>>>>>>> master
 
 // var $ = function (id){
 // 	return document.getElementById(id);

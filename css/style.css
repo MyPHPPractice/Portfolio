@@ -49,8 +49,8 @@ nav {
         display: flex;
         align-items: center;
         justify-content: center;
-        padding: 3% 0;
-        margin: 3% 0; }
+        padding: 3% 0 0 0;
+        margin: 3% 0 0 0; }
         nav ul li a:hover {
           border-left: 3px solid #FB9A63;
           border-right: 3px solid #FB9A63;
