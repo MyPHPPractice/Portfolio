@@ -1,0 +1,205 @@
+* {
+  box-sizing: border-box; }
+
+.sticky {
+  position: fixed;
+  width: 80%;
+  left: 0;
+  top: 0;
+  z-index: 100;
+  border-top: 0;
+  box-shadow: 2px 2px 10px black; }
+
+body {
+  background-color: #BFC4D5; }
+
+/*
+*
+*This is sticky nav bar and header
+*
+*
+*/
+nav {
+  background-color: #424862;
+  width: 80%;
+  margin: 0 10%;
+  z-index: 1; }
+  nav ul {
+    padding: 0;
+    list-style-type: none;
+    display: -moz-box;
+    display: -webkit-box;
+    display: box;
+    margin: 0; }
+    nav ul li {
+      box-flex: 1;
+      -moz-box-flex: 1;
+      -webkit-box-flex: 1;
+      text-align: center; }
+      nav ul li a {
+        background-color: #424862;
+        color: #F6FBF4;
+        text-decoration: none;
+        font-size: 1.5em;
+        font-weight: 100;
+        font-family: "Lato", sans-serif;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 3% 0;
+        margin: 3% 0; }
+        nav ul li a:hover {
+          border-left: 3px solid #FB9A63;
+          border-right: 3px solid #FB9A63;
+          color: #FB9A63;
+          font-weight: 200; }
+        nav ul li a:active {
+          background-color: #FB9A63;
+          color: #424862;
+          border: 3px solid #FB9A63;
+          border-radius: 5px; }
+
+header {
+  background-color: #424862;
+  height: 250px;
+  width: 80%;
+  margin: 0 10%; }
+  header h1 {
+    display: inline;
+    font-family: "Lato", sans-serif;
+    font-size: 6em;
+    font-weight: 100;
+    margin-top: 0;
+    color: #FB9A63;
+    text-shadow: 5px 5px 5px black;
+    float: right;
+    position: absolute; }
+  header img {
+    display: inline;
+    width: 50%; }
+
+/*
+*
+*
+*Content area
+*
+*
+*/
+.content {
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+  background-color: #BFC4D5;
+  padding: 5% 15%;
+  font-family: "Josefin Slab", serif;
+  overflow: hidden; }
+  .content h2 {
+    color: #F6FBF4;
+    font-size: 4.5em;
+    font-weight: 900;
+    margin: 0;
+    text-align: center; }
+    .content h2 span {
+      font-weight: 100; }
+  .content .scrollbutt {
+    margin: 10% auto;
+    width: 800px;
+    height: 200px;
+    position: relative; }
+    .content .scrollbutt #ff {
+      width: 10%;
+      position: absolute;
+      right: 0;
+      top: 45%; }
+      .content .scrollbutt #ff:hover {
+        width: 8%;
+        box-shadow: 5px 5px 5px white; }
+    .content .scrollbutt #rw {
+      width: 10%;
+      position: absolute;
+      left: 0;
+      top: 45%; }
+      .content .scrollbutt #rw:hover {
+        width: 8%;
+        box-shadow: 5px 5px 5px white; }
+    .content .scrollbutt .newsblock {
+      width: 600px;
+      overflow: auto;
+      position: relative;
+      margin: 0 auto; }
+      .content .scrollbutt .newsblock img.slide {
+        width: 2000px;
+        position: relative; }
+  .content h3 {
+    text-align: center;
+    font-size: 2em; }
+  .content article {
+    font-size: 1em;
+    height: 100%; }
+    .content article::first-letter {
+      font-size: 5em;
+      font-weight: 200;
+      font-family: "Josefin Slab", serif; }
+    .content article #right {
+      width: 35%;
+      margin: 10px;
+      float: right; }
+    .content article #left {
+      width: 35%;
+      margin: 10px;
+      float: left; }
+
+/*
+*
+*
+*
+*footer
+*
+*
+*
+*/
+.foot {
+  width: 100%;
+  background-color: #424862;
+  margin: 0 auto;
+  font-family: "Lato", sans-serif; }
+  .foot footer {
+    width: 20%;
+    margin: 0 auto;
+    padding-top: 2%; }
+    .foot footer address {
+      text-align: center;
+      color: #FB9A63;
+      padding-left: 5%;
+      font-style: normal;
+      font-size: 1.25em; }
+  .foot .nav {
+    width: 80%;
+    margin: 0 10%;
+    display: inline-block; }
+    .foot .nav ul {
+      list-style-type: none;
+      display: -moz-box;
+      display: -webkit-box;
+      display: box;
+      padding: 0; }
+      .foot .nav ul li {
+        box-flex: 1;
+        -moz-box-flex: 1;
+        -webkit-box-flex: 1;
+        text-align: center; }
+        .foot .nav ul li a {
+          font-size: 1.5em;
+          font-weight: 100;
+          color: #F6FBF4;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          text-decoration: none; }
+          .foot .nav ul li a:hover {
+            border-left: 3px solid #FB9A63;
+            border-right: 3px solid #FB9A63;
+            color: #FB9A63;
+            font-weight: 200; }
+
+/*# sourceMappingURL=style.css.map */
