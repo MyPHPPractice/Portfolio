@@ -8,6 +8,10 @@ var stickyNavTop = $('nav').offset().top;
 		} else {
 			$('nav').removeClass('sticky')
 		}
+		var width = $(window).width()
+		if ( width <= 600) {
+			$('nav').removeClass('sticky');
+		}
 	};
 
 	stickyNav();
@@ -39,4 +43,12 @@ var stickyNavTop = $('nav').offset().top;
 	$( "#rw" ).click(function(){
   		$( ".scroll" ).animate({ "right": "+=200px" }, "slow" );
 	});
-	
+
+// var $ = function (id){
+// 	return document.getElementById(id);
+// }
+// var width = window.innerWidth;
+
+// if (width <= 600) {
+// 	$('nav').style.display = "none"
+// }
