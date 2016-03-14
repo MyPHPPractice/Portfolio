@@ -82,6 +82,9 @@ nav {
 					border: 3px solid $orange;
 					border-radius: 5px;
 				}
+				@media screen and (max-width:600px) {
+					margin: 3% 0 0 0;
+				}
 			}
 		}
 	}
@@ -92,6 +95,9 @@ header {
 	width: 80%;
 	margin: auto;
 
+	@media screen and (max-width:900px) {
+		z-index: 100;
+	}
 	h1 {
 		display: inline;
 		font-family: $lato;
@@ -102,11 +108,24 @@ header {
 		text-shadow: 5px 5px 5px black;
 		float: right;
 		position: absolute;
+
+		@media screen and (max-width:900px) {
+			font-size: 5em;
+		}
+		@media screen and (max-width:750px) {
+			font-size: 4em;
+		}
+		@media screen and (max-width:600px) {
+			display: none;
+		}
 	}
 	img {
 		display: inline;
 		width: 50%;
 
+		@media screen and (max-width:600px) {
+			width: 100%;
+		}
 		&:hover {
 		}
 	}
@@ -119,9 +138,26 @@ header {
 *
 *
 */
-.content {
+#codeSection {
+	width: 100%;
+	margin-top: 10%;
+
+	figure img {
+		width: 30%;
+		float: left;
+		border-radius: 50%;
+
+		@media screen and (max-width:900px) {
+			width: 45%;
+		}
+		@media screen and (max-width:700px) {
+			width: 100%;
+		}
+	}
+}
+section {
 	width: 80%;
-	height: 100%;
+	height: auto;
 	margin: 0 auto;
 	background-color: $grey;
 	padding: 5% 15%;
@@ -139,51 +175,13 @@ header {
 			font-weight: 100;
 		}
 	}
-	.scrollbutt {
-		margin: 10% auto;
-		width: 800px;
-		height: 200px;
-		position: relative;
-
-		#ff {
-			width: 10%;
-			position: absolute;
-			right: 0;
-			top: 45%;
-
-			&:hover {
-				width: 8%;
-				box-shadow: 5px 5px 5px white;
-			}
-		}
-		#rw {
-			width: 10%;
-			position: absolute;
-			left: 0;
-			top: 45%;
-
-			&:hover {
-				width: 8%;
-				box-shadow: 5px 5px 5px white;
-			}
-		}
-		.newsblock {
-			width: 600px;
-			overflow: auto;
-			position: relative;
-			margin: 0 auto;
-
-			img.slide {
-				width: 2000px;
-				position: relative;
-			}
-		}
-	}
 	h3 {
 		text-align: center;
 		font-size: 2em;
+		clear: left;
 	}
 	article {
+		clear: left;
 		font-size: 1em;
 		height: 100%;
 
@@ -196,11 +194,21 @@ header {
 			width: 35%;
 			margin: 10px;
 			float: right;
+
+			@media screen and (max-width:800px) {
+				float: none;
+				width: 100%;
+			}
 		}
 		#left {
 			width: 35%;
 			margin: 10px;
 			float: left;
+
+			@media screen and (max-width:800px) {
+				float: none;
+				width: 100%;
+			}
 		}
 	}
 }
@@ -214,59 +222,57 @@ header {
 *
 *
 */
-.foot {
+footer {
 	width: 100%;
 	background-color: $darkblue;
 	//opacity: .5;
 	margin: 0 auto;
 	font-family: $lato;
 
-	footer {
-		width: 20%;
-		margin: 0 auto;
-		padding-top: 2%;
-
-		address {
-			text-align: center;
-			color: $orange;
-			padding-left: 5%;
-			font-style: normal;
-			font-size: 1.25em;
-		}
+	address {
+		text-align: center;
+		color: $orange;
+		padding-left: 5%;
+		font-style: normal;
+		font-size: 1.25em;
 	}
-	.nav {
-		width: 80%;
-		margin: 0 10%;
-		display: inline-block;
+}
+.nav {
+	width: 80%;
+	margin: 0 10%;
+	display: inline-block;
 
-		ul {
-			list-style-type: none;
-			display: -moz-box;
-			display: -webkit-box;
-			display: box;
-			padding: 0;
+	ul {
+		list-style-type: none;
+		display: -moz-box;
+		display: -webkit-box;
+		display: box;
+		padding: 0;
 
-			li {
-				box-flex: 1;
-				-moz-box-flex: 1;
-				-webkit-box-flex: 1;
-				text-align: center;
+		@media screen and (max-width:600px) {
+			display: block;
+			width: 100%;
+		}
+		li {
+			box-flex: 1;
+			-moz-box-flex: 1;
+			-webkit-box-flex: 1;
+			text-align: center;
 
-				a {
-					font-size: 1.5em;
-					font-weight: 100;
-					color: $white;
-					display: flex;
-					align-items: center;
-					justify-content: center;
-					text-decoration: none;
+			a {
+				font-size: 1.5em;
+				font-weight: 100;
+				color: $white;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				text-decoration: none;
 
-					&:hover {
-						border-left: 3px solid $orange;
-						border-right: 3px solid $orange;
-						color: $orange;
-						font-weight: 200;
-					}
+				&:hover {
+					border-left: 3px solid $orange;
+					border-right: 3px solid $orange;
+					color: $orange;
+					font-weight: 200;
 				}
 			}
 		}
