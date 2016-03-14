@@ -31,6 +31,9 @@ nav {
     display: -webkit-box;
     display: box;
     margin: 0; }
+    @media screen and (max-width: 600px) {
+      nav ul {
+        display: block; } }
     nav ul li {
       box-flex: 1;
       -moz-box-flex: 1;
@@ -46,8 +49,8 @@ nav {
         display: flex;
         align-items: center;
         justify-content: center;
-        padding: 3% 0;
-        margin: 3% 0; }
+        padding: 3% 0 0 0;
+        margin: 3% 0 0 0; }
         nav ul li a:hover {
           border-left: 3px solid #FB9A63;
           border-right: 3px solid #FB9A63;
@@ -63,7 +66,7 @@ header {
   background-color: #424862;
   height: 250px;
   width: 80%;
-  margin: 0 10%; }
+  margin: auto; }
   header h1 {
     display: inline;
     font-family: "Lato", sans-serif;
