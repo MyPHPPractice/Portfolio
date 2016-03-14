@@ -23,8 +23,6 @@ $jose: 'Josefin Slab', serif;
 	border-top: 0;
 	box-shadow: 2px 2px 10px black;
 }
-.active {
-}
 body {
 	background-color: $grey;
 }
@@ -49,6 +47,9 @@ nav {
 		display: box;
 		margin: 0;
 
+		@media screen and (max-width:600px) {
+			display: block;
+		}
 		li {
 			box-flex: 1;
 			-moz-box-flex: 1;
@@ -66,8 +67,8 @@ nav {
 				display: flex;
 				align-items: center;
 				justify-content: center;
-				padding: 3% 0;
-				margin: 3% 0;
+				padding: 3% 0 0 0;
+				margin: 3% 0 0 0;
 
 				&:hover {
 					border-left: 3px solid $orange;
@@ -89,7 +90,7 @@ header {
 	background-color: $darkblue;
 	height: 250px;
 	width: 80%;
-	margin: 0 10%;
+	margin: auto;
 
 	h1 {
 		display: inline;
