@@ -1,0 +1,47 @@
+/*
+*
+*This is header
+*
+*
+*/
+header {
+	background-color: $darkblue;
+	height: 250px;
+	width: 80%;
+	margin: auto;
+
+	@media screen and (max-width:900px) {
+		z-index: 100;
+	}
+	h1 {
+		display: inline;
+		font-family: $lato;
+		font-size: 6em;
+		font-weight: 100;
+		margin-top: 0;
+		color: $orange;
+		text-shadow: 5px 5px 5px black;
+		float: right;
+		position: absolute;
+
+		@media screen and (max-width:900px) {
+			font-size: 5em;
+		}
+		@media screen and (max-width:750px) {
+			font-size: 4em;
+		}
+		@media screen and (max-width:600px) {
+			display: none;
+		}
+	}
+	img {
+		display: inline;
+		width: 50%;
+
+		@media screen and (max-width:600px) {
+			width: 100%;
+		}
+		&:hover {
+		}
+	}
+}

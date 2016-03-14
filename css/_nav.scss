@@ -1,0 +1,71 @@
+/*
+*
+*This is sticky nav bar
+*
+*
+*/
+.sticky {
+	position: fixed;
+	width: 80%;
+	left: 0;
+	top: 0;
+	z-index: 100;
+	border-top: 0;
+	box-shadow: 2px 2px 10px black;
+}
+nav {
+	background-color: $darkblue;
+	width: 80%;
+	margin: 0 10%;
+	z-index: 1;
+
+	ul {
+		padding: 0;
+		list-style-type: none;
+		display: -moz-box;
+		display: -webkit-box;
+		display: box;
+		margin: 0;
+
+		@media screen and (max-width:600px) {
+			display: block;
+		}
+		li {
+			box-flex: 1;
+			-moz-box-flex: 1;
+			-webkit-box-flex: 1;
+			text-align: center;
+			//border: $border;
+
+			a {
+				background-color: $darkblue;
+				color: $white;
+				text-decoration: none;
+				font-size: 1.5em;
+				font-weight: 100;
+				font-family: $lato;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				padding: 3% 0 3% 0;
+				margin: 3% 0 3% 0;
+
+				&:hover {
+					border-left: 3px solid $orange;
+					border-right: 3px solid $orange;
+					color: $orange;
+					font-weight: 200;
+				}
+				&:active {
+					background-color: $orange;
+					color: $darkblue;
+					border: 3px solid $orange;
+					border-radius: 5px;
+				}
+				@media screen and (max-width:600px) {
+					margin: 3% 0 0 0;
+				}
+			}
+		}
+	}
+}
