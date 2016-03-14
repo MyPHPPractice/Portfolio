@@ -2,46 +2,10 @@
 include 'nav.php';
 include 'header.php';
 ?>
-<section id="codeSection">
-	<h2>
-	Check out <span>some code</span>
-	</h2>
-	<div>
-			<figure>
-				<img src="img/me.png">
-				<figcaption>	
-				</figcaption>
-			</figure>
-			<figure>
-				<img src="img/me.png">
-				<figcaption>	
-				</figcaption>
-			</figure>
-			<figure>
-				<img src="img/me.png">
-				<figcaption>	
-				</figcaption>
-			</figure>
-			<figure>
-				<img src="img/me.png">
-				<figcaption>	
-				</figcaption>
-			</figure>
-			<figure>
-				<img src="img/me.png">
-				<figcaption>	
-				</figcaption>
-			</figure>
-			<figure>
-				<img src="img/me.png">
-				<figcaption>	
-				</figcaption>
-			</figure>
-	</div>
-</section>
+
 <section>
 	<h3>Yours Truly</h3>
-	<article>
+	<article class="about">
 		
 		<img id="right" src="img/farm2.jpeg">
 		Lorem ipsum dolor sit amet, 

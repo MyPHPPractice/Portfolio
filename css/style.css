@@ -49,8 +49,8 @@ nav {
         display: flex;
         align-items: center;
         justify-content: center;
-        padding: 3% 0 0 0;
-        margin: 3% 0 0 0; }
+        padding: 3% 0 3% 0;
+        margin: 3% 0 3% 0; }
         nav ul li a:hover {
           border-left: 3px solid #FB9A63;
           border-right: 3px solid #FB9A63;
@@ -112,20 +112,6 @@ header {
 *
 *
 */
-#codeSection {
-  width: 100%;
-  margin-top: 10%; }
-  #codeSection figure img {
-    width: 30%;
-    float: left;
-    border-radius: 50%; }
-    @media screen and (max-width: 900px) {
-      #codeSection figure img {
-        width: 45%; } }
-    @media screen and (max-width: 700px) {
-      #codeSection figure img {
-        width: 100%; } }
-
 section {
   width: 80%;
   height: auto;
@@ -134,40 +120,39 @@ section {
   padding: 0 15%;
   font-family: "Josefin Slab", serif;
   overflow: hidden; }
-  section h2 {
-    color: #F6FBF4;
-    font-size: 4.5em;
-    font-weight: 900;
-    margin: 0;
-    text-align: center; }
-    section h2 span {
-      font-weight: 100; }
   section h3 {
+    margin: 25% 0 0 0;
+    padding-left: 7%;
     text-align: center;
-    font-size: 2em;
-    clear: left; }
-  section article {
+    font-size: 3em;
+    clear: left;
+    color: #F6FBF4; }
+    @media screen and (max-width: 800px) {
+      section h3 {
+        margin-top: 10%; } }
+  section article.about {
     clear: left;
     font-size: 1em;
-    height: 100%; }
-    section article::first-letter {
+    height: 100%;
+    padding: 5%; }
+    section article.about::first-letter {
       font-size: 5em;
       font-weight: 200;
       font-family: "Josefin Slab", serif; }
-    section article #right {
+    section article.about #right {
       width: 35%;
       margin: 5%;
       float: right; }
       @media screen and (max-width: 800px) {
-        section article #right {
+        section article.about #right {
           float: none;
           width: 100%; } }
-    section article #left {
+    section article.about #left {
       width: 35%;
       margin: 5%;
       float: left; }
       @media screen and (max-width: 800px) {
-        section article #left {
+        section article.about #left {
           float: none;
           width: 100%; } }
 
@@ -181,6 +166,7 @@ section {
 *
 */
 footer {
+  clear: left;
   width: 100%;
   background-color: #424862;
   margin: 0 auto;
@@ -231,18 +217,18 @@ section.form {
   margin: auto; }
   section.form aside {
     width: 49%;
-    border: 1px solid black;
     float: left;
-    margin-top: 20%;
-    text-align: center; }
+    margin-top: 27%;
+    text-align: center;
+    padding-right: 10%; }
+    @media screen and (max-width: 1000px) {
+      section.form aside {
+        margin-top: 20%; } }
     section.form aside p {
       width: 90%;
       margin: auto;
       padding: 5%;
-      font-size: 1.2em; }
-      @media screen and (max-width: 500px) {
-        section.form aside p {
-          font-size: 2em; } }
+      font-size: 1em; }
       section.form aside p a {
         text-decoration: none;
         font-size: 1.2em;
@@ -250,7 +236,7 @@ section.form {
         font-weight: 700; }
         @media screen and (max-width: 500px) {
           section.form aside p a {
-            font-size: 2em; } }
+            font-size: 1em; } }
       section.form aside p a:hover {
         color: #FB9A63; }
     section.form aside address {
@@ -265,7 +251,13 @@ section.form {
         width: 100%; } }
     @media screen and (max-width: 600px) {
       section.form aside {
-        margin-top: 38%; } }
+        margin-top: 50%; } }
+    @media screen and (max-width: 500px) {
+      section.form aside {
+        margin-top: 30%; } }
+    @media screen and (max-width: 400px) {
+      section.form aside {
+        margin-top: 20%; } }
   section.form #form {
     width: 100%;
     height: auto;
@@ -338,5 +330,49 @@ section.form {
         section.form form textarea {
           height: 10em;
           width: 80%; } }
+
+#codeSection {
+  width: 80%;
+  height: auto;
+  margin: auto; }
+  #codeSection h2 {
+    color: #F6FBF4;
+    font-size: 4.5em;
+    font-weight: 900;
+    margin: 0;
+    text-align: center; }
+    #codeSection h2 span {
+      font-weight: 100; }
+  #codeSection figure {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    float: left;
+    width: 25%; }
+    @media screen and (max-width: 1220px) {
+      #codeSection figure {
+        width: 40%; } }
+    @media screen and (max-width: 1020px) {
+      #codeSection figure {
+        width: 100%;
+        margin: auto; } }
+    #codeSection figure img {
+      width: 100%;
+      height: auto;
+      border-radius: 50%; }
+  #codeSection figcaption {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.75);
+    color: white;
+    padding: 10px 20px;
+    opacity: 0;
+    bottom: -30%;
+    left: 0;
+    -webkit-transition: all 0.6s ease;
+    -moz-transition: all 0.6s ease;
+    -o-transition: all 0.6s ease; }
+  #codeSection figure:hover figcaption {
+    opacity: 1;
+    bottom: 0; }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,54 @@
+#codeSection {
+	width: 80%;
+	height: auto;
+	margin: auto;
+	//border: $border;
+
+	h2 {
+		color: $white;
+		font-size: 4.5em;
+		font-weight: 900;
+		margin: 0;
+		text-align: center;
+
+		span {
+			font-weight: 100;
+		}
+	}
+	figure {
+		display: block;
+		position: relative;
+		overflow: hidden;
+		float: left;
+		width: 25%;
+
+		@media screen and (max-width:1220px) {
+			width: 40%;
+		}
+		@media screen and (max-width:1020px) {
+			width: 100%;
+			margin: auto;
+		}
+		img {
+			width: 100%;
+			height: auto;
+			border-radius: 50%;
+		}
+	}
+	figcaption {
+		position: absolute;
+		background: rgba(0, 0, 0, 0.75);
+		color: white;
+		padding: 10px 20px;
+		opacity: 0;
+		bottom: -30%;
+		left: 0;
+		-webkit-transition: all 0.6s ease;
+		-moz-transition: all 0.6s ease;
+		-o-transition: all 0.6s ease;
+	}
+	figure:hover figcaption {
+		opacity: 1;
+		bottom: 0;
+	}
+}

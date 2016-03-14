@@ -4,8 +4,8 @@ include 'header.php';
 ?>
 <section class="form">
 	<aside>
-		<h3>Reach me At!</h3>
 		<p>
+		Reach me at:
 			<a href="tel:9084425795">(908)442-5795</a>
 				<br/><br/>
 			<a href="mailto:willsmith12289@gmail.com">willsmith12289@gmail.com</a>

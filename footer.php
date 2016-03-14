@@ -10,10 +10,9 @@
 
 	<div class="nav">
 		<ul>
-			<li><a href="">contact</a></li>
-			<li><a href="">employment</a></li>
-			<li><a href="">sitemap</a></li>
-			<li><a href="">about</a></li>
+			<li><a href="contact.php">contact</a></li>
+			<li><a href="resume.php">employ me!</a></li>
+			<li><a href="index.php">about</a></li>
 		</ul>
 	</div>
 
