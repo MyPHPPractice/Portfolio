@@ -132,9 +132,12 @@ section {
         margin-top: 10%; } }
   section article.about {
     clear: left;
-    font-size: 1em;
+    font-size: 1.5em;
     height: 100%;
     padding: 5%; }
+    @media screen and (max-width: 800px) {
+      section article.about {
+        font-size: 1em; } }
     section article.about::first-letter {
       font-size: 5em;
       font-weight: 200;
@@ -358,8 +361,7 @@ section.form {
         margin: auto; } }
     #codeSection figure img {
       width: 100%;
-      height: auto;
-      border-radius: 50%; }
+      height: auto; }
   #codeSection figcaption {
     position: absolute;
     background: rgba(0, 0, 0, 0.75);

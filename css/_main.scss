@@ -28,10 +28,13 @@ section {
 	}
 	article.about {
 		clear: left;
-		font-size: 1em;
+		font-size: 1.5em;
 		height: 100%;
 		padding: 5%;
 
+		@media screen and (max-width:800px) {
+			font-size: 1em;
+		}
 		&::first-letter {
 			font-size: 5em;
 			font-weight: 200;
