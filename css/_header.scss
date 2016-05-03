@@ -16,7 +16,7 @@ header {
 	h1 {
 		display: inline;
 		font-family: $lato;
-		font-size: 6em;
+		font-size: 60%;
 		font-weight: 100;
 		margin-top: 0;
 		color: $orange;
@@ -24,11 +24,12 @@ header {
 		float: right;
 		position: absolute;
 
-		@media screen and (max-width:900px) {
-			font-size: 5em;
+		// @media screen and (max-width:900px) {
+			// 	font-size: 5em;
+			//
 		}
-		@media screen and (max-width:750px) {
-			font-size: 4em;
+		@media screen and (max-width:700px) {
+			font-size: 40%;
 		}
 		@media screen and (max-width:600px) {
 			display: none;
