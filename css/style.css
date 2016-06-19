@@ -13,7 +13,8 @@ body {
 .sticky {
   position: fixed;
   width: 80%;
-  left: 0;
+  left: 10%;
+  right: 10%;
   top: 0;
   z-index: 100;
   border-top: 0;
@@ -22,7 +23,8 @@ body {
 nav {
   background-color: #424862;
   width: 80%;
-  margin: 0 10%;
+  max-width: 1400px;
+  margin: auto;
   z-index: 1; }
   nav ul {
     padding: 0;
@@ -73,37 +75,57 @@ nav {
 */
 header {
   background-color: #424862;
-  height: 250px;
+  height: 350px;
   width: 80%;
+  max-width: 1400px;
   margin: auto; }
+  @media screen and (max-width: 1300px) {
+    header {
+      height: 250px; } }
   @media screen and (max-width: 900px) {
     header {
       z-index: 100; } }
-  header h1 {
-    display: inline;
-    font-family: "Lato", sans-serif;
-    font-size: 6em;
-    font-weight: 100;
-    margin-top: 0;
-    color: #FB9A63;
-    text-shadow: 5px 5px 5px black;
-    float: right;
-    position: absolute; }
-    @media screen and (max-width: 900px) {
-      header h1 {
-        font-size: 5em; } }
-    @media screen and (max-width: 750px) {
-      header h1 {
-        font-size: 4em; } }
-    @media screen and (max-width: 600px) {
-      header h1 {
-        display: none; } }
-  header img {
-    display: inline;
-    width: 50%; }
-    @media screen and (max-width: 600px) {
-      header img {
-        width: 100%; } }
+
+h1 {
+  display: inline;
+  font-family: "Lato", sans-serif;
+  font-size: 7em;
+  font-weight: 100;
+  margin: 0 0 0 10%;
+  color: #FB9A63;
+  text-shadow: 5px 5px 5px black;
+  float: right;
+  position: absolute; }
+  @media screen and (max-width: 1300px) {
+    h1 {
+      font-size: 6em; } }
+  @media screen and (max-width: 1100px) {
+    h1 {
+      margin: 0 0 0 5%; } }
+  @media screen and (max-width: 1000px) {
+    h1 {
+      margin: 0; } }
+  @media screen and (max-width: 900px) {
+    h1 {
+      font-size: 5em; } }
+  @media screen and (max-width: 700px) {
+    h1 {
+      font-size: 4em; } }
+  @media screen and (max-width: 600px) {
+    h1 {
+      display: none; } }
+
+img {
+  display: inline; }
+  @media screen and (max-width: 1700px) {
+    img {
+      width: 43%; } }
+  @media screen and (max-width: 1300px) {
+    img {
+      width: 40%; } }
+  @media screen and (max-width: 600px) {
+    img {
+      width: 100%; } }
 
 /*
 *
@@ -113,51 +135,223 @@ header {
 *
 */
 section {
-  width: 80%;
-  height: auto;
-  margin: 0 auto;
+  width: 100%;
+  max-width: 1600px;
+  margin: auto;
   background-color: #BFC4D5;
   padding: 0 15%;
-  font-family: "Josefin Slab", serif;
-  overflow: hidden; }
+  font-family: "Josefin Slab", serif; }
   section h3 {
-    margin: 25% 0 0 0;
-    padding-left: 7%;
+    margin: 5% 0 0 20%;
     text-align: center;
-    font-size: 3em;
+    font-size: 5em;
     clear: left;
     color: #F6FBF4; }
     @media screen and (max-width: 800px) {
       section h3 {
-        margin-top: 10%; } }
+        font-size: 3em; } }
+    @media screen and (max-width: 600px) {
+      section h3 {
+        margin: 55% 0 0 0; } }
+    @media screen and (max-width: 500px) {
+      section h3 {
+        margin: 45% 0 0 0; } }
+    @media screen and (max-width: 400px) {
+      section h3 {
+        margin: 35% 0 0 0; } }
   section article.about {
     clear: left;
-    font-size: 1.5em;
-    height: 100%;
-    padding: 5%; }
-    @media screen and (max-width: 800px) {
+    font-size: 1.5em; }
+    @media screen and (max-width: 3000px) {
       section article.about {
-        font-size: 1em; } }
+        margin: 8% 0 0 0; } }
+    @media screen and (max-width: 1650px) {
+      section article.about {
+        margin: 0; } }
+    @media screen and (max-width: 500px) {
+      section article.about {
+        font-size: 1.2em; } }
     section article.about::first-letter {
       font-size: 5em;
       font-weight: 200;
       font-family: "Josefin Slab", serif; }
+      @media screen and (max-width: 900px) {
+        section article.about::first-letter {
+          font-size: 4em; } }
+      @media screen and (max-width: 800px) {
+        section article.about::first-letter {
+          font-size: 3em; } }
+      @media screen and (max-width: 700px) {
+        section article.about::first-letter {
+          font-size: 2em; } }
+      @media screen and (max-width: 600px) {
+        section article.about::first-letter {
+          font-size: 1em; } }
     section article.about #right {
       width: 35%;
       margin: 5%;
       float: right; }
-      @media screen and (max-width: 800px) {
+      @media screen and (max-width: 600px) {
         section article.about #right {
           float: none;
-          width: 100%; } }
-    section article.about #left {
-      width: 35%;
-      margin: 5%;
-      float: left; }
-      @media screen and (max-width: 800px) {
-        section article.about #left {
-          float: none;
-          width: 100%; } }
+          width: 80%; } }
+
+#codeSection {
+  width: 80%;
+  height: auto;
+  max-width: 1200px;
+  margin: auto; }
+  #codeSection h2 {
+    color: #F6FBF4;
+    font-size: 4.5em;
+    font-weight: 900;
+    margin: 5%;
+    text-align: center; }
+    #codeSection h2 span {
+      font-weight: 100; }
+  #codeSection figure {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    width: 25%;
+    padding: 5% 0; }
+    @media screen and (max-width: 1220px) {
+      #codeSection figure {
+        width: 40%; } }
+    @media screen and (max-width: 1050px) {
+      #codeSection figure {
+        width: 80%;
+        margin: 0 10%; } }
+    #codeSection figure img {
+      width: 100%;
+      height: auto;
+      border-radius: 15px; }
+  #codeSection figcaption {
+    position: absolute;
+    background: rgba(102, 102, 102, 0.95);
+    color: white;
+    padding: 10% 20%;
+    opacity: 0;
+    bottom: -30%;
+    left: 5%;
+    right: 5%;
+    font-family: "Lato", sans-serif;
+    font-size: 1.2em;
+    text-align: center;
+    -webkit-transition: all 0.6s ease;
+    -moz-transition: all 0.6s ease;
+    -o-transition: all 0.6s ease; }
+  #codeSection figure:hover figcaption {
+    opacity: 1;
+    bottom: 0; }
+
+#resume {
+  width: 80%; }
+  @media screen and (max-width: 600px) {
+    #resume {
+      width: 100%; } }
+  #resume h2 {
+    padding-top: 5%;
+    font-size: 2.3em;
+    font-weight: 900;
+    color: #666666; }
+  #resume p {
+    font-size: 1em;
+    margin: 2px 0 5% 0; }
+  #resume li {
+    font-size: 1.2em;
+    margin: 2px 0; }
+  #resume h5 {
+    font-size: 1.7em;
+    font-weight: 900;
+    margin: 0; }
+  #resume h4 {
+    font-size: 1.2em;
+    font-weight: 700;
+    margin: 2px 0; }
+
+#contact {
+  width: 100%;
+  margin: auto; }
+  #contact h3 {
+    margin: 15% 0 0 0; }
+  #contact #titles {
+    float: left;
+    width: auto;
+    padding-right: 2%; }
+    #contact #titles p {
+      line-height: 2em;
+      font-size: 2em; }
+      @media screen and (max-width: 900px) {
+        #contact #titles p {
+          line-height: 2em;
+          font-size: 1.7em; } }
+      @media screen and (max-width: 600px) {
+        #contact #titles p {
+          line-height: 2em;
+          font-size: 1.5em; } }
+      @media screen and (max-width: 500px) {
+        #contact #titles p {
+          line-height: 2em;
+          font-size: 1.3em; } }
+  #contact form {
+    width: 62%;
+    float: left; }
+    @media screen and (max-width: 550px) {
+      #contact form {
+        width: 50%; } }
+    #contact form input {
+      border-radius: 5px; }
+    #contact form p {
+      line-height: 2em;
+      font-size: 2em; }
+      @media screen and (max-width: 900px) {
+        #contact form p {
+          line-height: 2em;
+          font-size: 1.7em; } }
+      @media screen and (max-width: 600px) {
+        #contact form p {
+          line-height: 2em;
+          font-size: 1.4em; } }
+      @media screen and (max-width: 500px) {
+        #contact form p {
+          line-height: 2em;
+          font-size: 1.1em; } }
+      #contact form p input[type=text] {
+        width: 100%;
+        height: 4em;
+        padding-bottom: 0; }
+      #contact form p input[type=number] {
+        width: 100%;
+        height: 4em;
+        padding-bottom: 0; }
+      #contact form p input[type=submit] {
+        box-sizing: border-box;
+        font-size: .7em;
+        border-radius: 5px;
+        background-color: #424862;
+        border: none;
+        color: white;
+        padding: 16px 32px;
+        text-decoration: none;
+        cursor: pointer;
+        margin: auto; }
+      #contact form p input[type=submit]:hover {
+        color: #FB9A63;
+        border: 4px solid #FB9A63; }
+      #contact form p input[type=submit]:active {
+        background-color: #FB9A63;
+        color: #424862; }
+    #contact form textarea {
+      width: 100%;
+      height: 20em;
+      border-radius: 5px; }
+      @media screen and (max-width: 900px) {
+        #contact form textarea {
+          height: 10em; } }
+    #contact form span {
+      color: red;
+      font-size: 2em; }
 
 /*
 *
@@ -171,210 +365,8 @@ section {
 footer {
   clear: left;
   width: 100%;
+  height: 200px;
   background-color: #424862;
-  margin: 0 auto;
-  font-family: "Lato", sans-serif; }
-  footer address {
-    text-align: center;
-    color: #FB9A63;
-    padding-left: 5%;
-    font-style: normal;
-    font-size: 1.25em; }
-
-.nav {
-  width: 80%;
-  margin: 0 10%;
-  display: inline-block; }
-  .nav ul {
-    list-style-type: none;
-    display: -moz-box;
-    display: -webkit-box;
-    display: box;
-    padding: 0; }
-    @media screen and (max-width: 600px) {
-      .nav ul {
-        display: block;
-        width: 100%; } }
-    .nav ul li {
-      box-flex: 1;
-      -moz-box-flex: 1;
-      -webkit-box-flex: 1;
-      text-align: center; }
-      .nav ul li a {
-        font-size: 1.5em;
-        font-weight: 100;
-        color: #F6FBF4;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-decoration: none; }
-        .nav ul li a:hover {
-          border-left: 3px solid #FB9A63;
-          border-right: 3px solid #FB9A63;
-          color: #FB9A63;
-          font-weight: 200; }
-
-section.form {
-  width: 95%;
-  height: auto;
-  margin: auto; }
-  section.form aside {
-    width: 49%;
-    float: left;
-    margin-top: 27%;
-    text-align: center;
-    padding-right: 10%; }
-    @media screen and (max-width: 1000px) {
-      section.form aside {
-        margin-top: 20%; } }
-    section.form aside p {
-      width: 90%;
-      margin: auto;
-      padding: 5%;
-      font-size: 1em; }
-      section.form aside p a {
-        text-decoration: none;
-        font-size: 1.2em;
-        color: #7BA47F;
-        font-weight: 700; }
-        @media screen and (max-width: 500px) {
-          section.form aside p a {
-            font-size: 1em; } }
-      section.form aside p a:hover {
-        color: #FB9A63; }
-    section.form aside address {
-      font-size: 2em; }
-      @media screen and (max-width: 500px) {
-        section.form aside address {
-          font-size: 1.5em; } }
-    @media screen and (max-width: 900px) {
-      section.form aside {
-        float: none;
-        margin: 0 auto;
-        width: 100%; } }
-    @media screen and (max-width: 600px) {
-      section.form aside {
-        margin-top: 50%; } }
-    @media screen and (max-width: 500px) {
-      section.form aside {
-        margin-top: 30%; } }
-    @media screen and (max-width: 400px) {
-      section.form aside {
-        margin-top: 20%; } }
-  section.form #form {
-    width: 100%;
-    height: auto;
-    margin: 0 10% 0 50%; }
-    @media screen and (max-width: 900px) {
-      section.form #form {
-        margin: auto;
-        margin-top: 10%; } }
-    section.form #form #titles {
-      float: left;
-      width: auto;
-      padding-right: 2%; }
-    section.form #form p {
-      line-height: 2em;
-      font-size: 2em; }
-      @media screen and (max-width: 900px) {
-        section.form #form p {
-          line-height: 2em;
-          font-size: 1em; } }
-      @media screen and (max-width: 900px) {
-        section.form #form p {
-          line-height: 2em;
-          font-size: .7em; } }
-  section.form form {
-    width: 62%;
-    float: left; }
-    @media screen and (max-width: 900px) {
-      section.form form {
-        width: 70%; } }
-    section.form form p {
-      line-height: 2em;
-      font-size: 2em; }
-      section.form form p input[type=text] {
-        width: 100%;
-        height: 4em;
-        padding-bottom: 0; }
-        @media screen and (max-width: 900px) {
-          section.form form p input[type=text] {
-            height: 2em;
-            width: 80%; } }
-      section.form form p input[type=number] {
-        width: 100%;
-        height: 4em;
-        padding-bottom: 0; }
-        @media screen and (max-width: 900px) {
-          section.form form p input[type=number] {
-            height: 2em;
-            width: 80%; } }
-      section.form form p input[type=submit] {
-        box-sizing: border-box;
-        font-size: .7em;
-        border-radius: 5px;
-        background-color: #424862;
-        border: none;
-        color: white;
-        padding: 16px 32px;
-        text-decoration: none;
-        cursor: pointer;
-        margin: auto; }
-      section.form form p input[type=submit]:hover {
-        color: #FB9A63;
-        border: 4px solid #FB9A63; }
-      section.form form p input[type=submit]:active {
-        background-color: #FB9A63;
-        color: #424862; }
-    section.form form textarea {
-      width: 100%;
-      height: 20em; }
-      @media screen and (max-width: 900px) {
-        section.form form textarea {
-          height: 10em;
-          width: 80%; } }
-
-#codeSection {
-  width: 80%;
-  height: auto;
-  margin: auto; }
-  #codeSection h2 {
-    color: #F6FBF4;
-    font-size: 4.5em;
-    font-weight: 900;
-    margin: 0;
-    text-align: center; }
-    #codeSection h2 span {
-      font-weight: 100; }
-  #codeSection figure {
-    display: block;
-    position: relative;
-    overflow: hidden;
-    float: left;
-    width: 25%; }
-    @media screen and (max-width: 1220px) {
-      #codeSection figure {
-        width: 40%; } }
-    @media screen and (max-width: 1020px) {
-      #codeSection figure {
-        width: 100%;
-        margin: auto; } }
-    #codeSection figure img {
-      width: 100%;
-      height: auto; }
-  #codeSection figcaption {
-    position: absolute;
-    background: rgba(0, 0, 0, 0.75);
-    color: white;
-    padding: 10px 20px;
-    opacity: 0;
-    bottom: -30%;
-    left: 0;
-    -webkit-transition: all 0.6s ease;
-    -moz-transition: all 0.6s ease;
-    -o-transition: all 0.6s ease; }
-  #codeSection figure:hover figcaption {
-    opacity: 1;
-    bottom: 0; }
+  margin: 0 auto; }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,9 +1,6 @@
-<?php include 'head.php'; 
-include 'nav.php';
-include 'header.php';
-?>
-<section>
-	<h1>William Smith</h1>
+
+<section id="resume">
+	
 	<h3>Web Developer</h3>
 	<article>
 		<ul>
@@ -14,12 +11,12 @@ include 'header.php';
 			<li>Looking for an opportunity to expand my knowledge, and further my web development career</li>
 		</ul>
 		<h2>Education</h2>
-			<h1>Alfred University</h1>
+			<h5>Alfred University</h5>
 				<p>August 2008 - May 2010 48 credit hours</p>
-			<h1>Raritan Valley Community College</h1>
+			<h5>Raritan Valley Community College</h5>
 			<h4>Associates Degree in Web Development</h4>
 				<p>June 2015 - Degree expected May 2016</p>
-			<h1>Courses:</h1>
+			<h5>Courses:</h5>
 			<ul>
 				<li><b>Web Development 1 + 2</b>
 					<ul>
@@ -82,4 +79,3 @@ include 'header.php';
 			</ul>
 	</article>
 </section>
-<?php include 'footer.php'; ?>

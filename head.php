@@ -6,6 +6,7 @@
   <title></title>
   <meta name="Generator" content="Cocoa HTML Writer">
   <meta name="CocoaVersion" content="1347.57">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Latest compiled and minified CSS -->
   <style type="text/css"></style>
 
@@ -19,6 +20,7 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 
 	<script type="text/javascript" src="js/index.js"></script>
+  <script type="text/javascript" src="js/scroll.js"></script>
 </head>
 <body>
 

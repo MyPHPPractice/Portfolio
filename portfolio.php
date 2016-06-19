@@ -1,7 +1,4 @@
-<?php include 'head.php'; 
-include 'nav.php';
-include 'header.php';
-?>
+
 
 <div id="codeSection">
 	<h2>
@@ -49,11 +46,10 @@ include 'header.php';
 		</a>
 		<a href="https://github.com/willsmith12289">
 			<figure>
-				<img src="img/github.png" alt="github">
+				<img src="img/github.png" alt="github" id="githubPic">
 				<figcaption>
 					GitHub Account
 				</figcaption>
 			</figure>
 		</a>
 </div>
-<?php include 'footer.php'; ?>

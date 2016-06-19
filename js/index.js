@@ -16,7 +16,14 @@ var stickyNavTop = $('nav').offset().top;
 
 	stickyNav();
 
-$(window).scroll(function() {
-	stickyNav();
+	$(window).scroll(function() {
+		stickyNav();
 	});
+
+	$('a[href*=#]').click(function(){
+    	$('html, body').animate({
+       		 scrollTop: ($( $.attr(this, 'href') ).offset().top)-100
+    	}, 500);
+    return false;
+});
 });

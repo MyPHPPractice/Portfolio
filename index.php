@@ -3,7 +3,7 @@ include 'nav.php';
 include 'header.php';
 ?>
 
-<section>
+<section id="about">
 	<h3>Yours Truly</h3>
 	<article class="about">
 		
@@ -14,4 +14,7 @@ include 'header.php';
 	
 </section>
 <?php
+include 'portfolio.php';
+include 'resume.php';
+include 'contact.php';
 include 'footer.php'; ?>
